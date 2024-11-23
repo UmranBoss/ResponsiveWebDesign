@@ -55,15 +55,15 @@ margin: 0 auto;
 header {
   position: fixed;
   top: 0;
-  min-height: 50px; /* reduced from 75 to 50 */
-  padding: 5px 20px; /* first: changed from opx to 5px */
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 40px;
+  padding: 0;
   display: flex;
-  justify-content: space-between; /* changed from space-around to space-between logo & nav */
+  justify-content: space-around;
   align-items: center;
   background-color: white;
-  width: 100%; /* added */
-  z-index: 100; /* added */
-  border-bottom: 1px solid #ddd; /* added: separator line */
 }
 
 @media (max-width: 600px) {
@@ -87,7 +87,7 @@ header {
 .logo > img {
   width: 100%;
   height: 5%;
-  max-width: 200px;
+  max-width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +98,7 @@ header {
 @media (max-width: 650px) {
   .logo > img {
     margin: 0 auto;
+    max-width: 10px;
   }
 }
 
