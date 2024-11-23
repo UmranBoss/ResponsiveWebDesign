@@ -55,12 +55,15 @@ margin: 0 auto;
 header {
   position: fixed;
   top: 0;
-  min-height: 75px;
-  padding: 0px 20px;
+  min-height: 50px; /* reduced from 75 to 50 */
+  padding: 5px 20px; /* first: changed from opx to 5px */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* changed from space-around to space-between logo & nav */
   align-items: center;
   background-color: white;
+  width: 100%; /* added */
+  z-index: 100; /* added */
+  border-bottom: 1px solid #ddd; /* added: separator line */
 }
 
 @media (max-width: 600px) {
