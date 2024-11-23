@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Umfrageformular</title>
+  <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Umfrageformular: Fachinformatiker für Anwendungsentwicklung</h1>
+    <p id="description"><em>Vielen Dank für Ihre wertvolle Unterstützung und Ihr Engagement, unsere Plattform zur besten Ressource für angehende Anwendungsentwickler zu machen.</em></p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+      <label id="name-label">Name:
+      <input id="name" type="name" for="name" placeholder="Max Mustermann" required>
+      </label>
+      <label id="email-label">Email:
+      <input id="email" type="email" for="email" placeholder="beispiel@mail.de" required>
+      </label>
+      <label id="number-label">Alter: <em>(optional)</em>
+      <input id="number" type="number" for="number" placeholder="30" min="1" max="100" required>
+      </label>
+      </fieldset>
+      <fieldset>
+      <label for="dropdown">Wählen Sie Ihr aktuelles Erfahrungslevel:<br>
+      <select id="dropdown" name="dropdown">
+        <option value=" ">(Bitte wählen Sie eine Option aus.)</option>
+        <option value="1">Anfänger</option>
+        <option value="2">Fortgeschrittener</option>
+        <option value="3">Experte</option>
+        </select>
+        </label><br>
+        <label for="radio">Wie wahrscheinlich ist es, dass Sie unsere Plattform einem Kollegen oder einer Kollegin empfehlen würden?<br>
+          <input id="radio" type="radio" name="radio" value="1" class="inline">Sehr wahrscheinlich<br>
+          <input id="radio" type="radio" name="radio" value="2" class="inline">Wahrscheinlich<br>
+          <input id="radio" type="radio" name="radio" value="3" class="inline">Neutral<br>
+          <input id="radio" type="radio" name="radio" value="4"class="inline">Unwahrscheinlich<br>
+          <input id="radio" type="radio" name="radio" value="5"class="inline">Sehr unwahrscheinlich<br>
+          </label>
+          <label for="dropdown">Welche Aspekte der Anwendungsentwicklung interessieren Sie am meisten?<br>
+          <select id="dropdown" name="dropdown">
+            <option value=" ">(Bitte wählen Sie eine Option aus.)</option>
+            <option value="1">Frontend-Entwicklung</option>
+            <option value="2">Backend-Entwicklung</option>
+            <option value="3">Datenbankdesign & -verwaltung</option>
+            <option value="4">Softwarearchitektur</option>
+            <option value="5">Testing & Qualitätssicherung</option>
+</select>
+</label><br>
+<label for="checkbox">Bitte wählen Sie die Bereiche aus, in denen Sie Verbesserungen oder zusätzliche Inhalte wünschen  <em>(Mehrfachauswahl möglich)</em>:<br>
+<input id="checkbox" type="checkbox" for="checkbox" value="1" class="inline">Frontend-Projekte<br>
+<input id="checkbox" type="checkbox" for="checkbox" value="2" class="inline">Backend-Projekte<br>
+<input id="checkbox" type="checkbox" for="checkbox" value="3" class="inline">Datenvisualisierung<br>
+<input id="checkbox" type="checkbox" for="checkbox" value="4" class="inline">Herausforderungen & Aufgaben<br>
+<input id="checkbox" type="checkbox" for="checkbox" value="5" class="inline">Community-Events<br>
+<input id="checkbox" type="checkbox" for="checkbox" value="6" class="inline">Zusätzliche Kurse & Zertifikate<br>
+</label>
+</fieldset>
+<fieldset>
+<label for="textarea">Haben Sie Ideen, Anmerkungen oder Feedback, das Sie mit uns teilen möchten?<br>
+<textarea id="textarea" rows="3" cols="30" placeholder="Geben Sie Ihre Ideen hier ein..."></textarea>
+</label>
+<button id="submit" type="submit">ABSENDEN</submit>
+          </fieldset>
+      </form>
+      </html>
